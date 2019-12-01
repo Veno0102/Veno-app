@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@drawable/ok_upload"
+        android:id="@+id/ok_upload"
+        android:title="완료"
+        app:showAsAction="always"/>
+
+</menu>

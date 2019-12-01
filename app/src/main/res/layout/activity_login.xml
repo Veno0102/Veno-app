@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity"
+    android:orientation="vertical">
+    <!-- 최상위 레이아웃  -->
+
+    <!-- 이메일, 비밀번호의 둥그런 테두리(카드뷰) -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="150dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="30dp">
+        <!-- 카드뷰 태그 끝 -->
+
+        <!-- 이메일과 비밀번호를 한개의 레이아웃으로 지정 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 이메일의 에딧텍스트 디자인 -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="30dp">
+
+                <!-- 에딧 텍스트 지정 -->
+                <EditText
+                    android:id="@+id/email"
+                    android:scrollbarSize="20sp"
+                    android:inputType="textPassword"
+                    android:layout_marginTop="20dp"
+                    android:hint="@string/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <!-- 에딧 텍스트 지정 끝 -->
+            </com.google.android.material.textfield.TextInputLayout>
+            <!-- 이메일의 에딧텍스트 지정 끝 -->
+
+
+
+            <!-- 비밀번호 에딧텍스트 디자인 -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp">
+                <!-- 에딧 텍스트 지정 -->
+                <EditText
+                    android:id="@+id/password"
+                    android:scrollbarSize="20sp"
+                    android:inputType="textPassword"
+                    android:layout_marginTop="20dp"
+                    android:hint="@string/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+             <!-- 에딧 텍스트 지정 끝 -->
+            </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- 이메일, 패스워드 한개의 레이아웃 끝 -->
+        </LinearLayout>
+     <!--  -->
+    </androidx.cardview.widget.CardView>
+
+
+
+    <!--  -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp">
+
+<!--  -->
+        <LinearLayout
+            android:gravity="right"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <!--  -->
+        <TextView
+            android:textColor="@color/black"
+            android:fontFamily="@font/doppio_one"
+            android:layout_margin="0dp"
+            android:text="@string/notAccount1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <!--  -->
+        <Button
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/signup_btn"
+            android:background="@color/background_color"
+            android:textColor="@color/blue"
+            android:text="@string/notAccount2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <!--  -->
+        </LinearLayout>
+        <!--  -->
+
+        <!--  -->
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="30dp"
+            android:background="@color/background_color"
+            android:textColor="@color/blue"
+            android:text="@string/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <!--  -->
+    </RelativeLayout>
+    <!--  -->
+</LinearLayout>
+<!--  -->

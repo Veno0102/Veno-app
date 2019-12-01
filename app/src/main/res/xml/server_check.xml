@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- START xml_defaults -->
+<defaultsMap>
+    <entry>
+        <key>loading_phrase</key>
+        <value>Fetching config…</value>
+    </entry>
+    <entry>
+        <key>welcome_message_caps</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>welcome_message</key>
+        <value>서버와 통신을 할 수 없습니다. 네트워크를 확인 해 주세요</value>
+    </entry>
+</defaultsMap>
+    <!-- END xml_defaults -->
